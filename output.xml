@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20210913 22:33:55.916" schemaversion="2" generator="Robot 4.0.1 (Python 2.7.17 on linux2)">
+<suite source="/home/julo_pool0096/testDonasi/donationSuccess.robot" id="s1" name="donationSuccess">
+<test id="s1-t1" name="Start 10k Donation Success">
+<kw name="open Chrome">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210913 22:33:56.076" level="INFO">Opening browser 'Chrome' to base url 'https://kitabisa.com'.</msg>
+<status status="PASS" endtime="20210913 22:34:03.493" starttime="20210913 22:33:56.075"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20210913 22:34:03.606" starttime="20210913 22:34:03.493"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>${delay}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210913 22:34:05.609" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20210913 22:34:05.610" starttime="20210913 22:34:03.607"/>
+</kw>
+<status status="PASS" endtime="20210913 22:34:05.610" starttime="20210913 22:33:56.074"/>
+</kw>
+<kw name="click campaign">
+<kw name="Wait Until Element Is Visible ${campaign}">
+<msg timestamp="20210913 22:34:05.621" level="FAIL">No keyword with name 'Wait Until Element Is Visible ${campaign}' found.</msg>
+<status status="FAIL" endtime="20210913 22:34:05.621" starttime="20210913 22:34:05.621"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${campaign}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" endtime="20210913 22:34:05.621" starttime="20210913 22:34:05.621"/>
+</kw>
+<status status="FAIL" endtime="20210913 22:34:05.622" starttime="20210913 22:34:05.610"/>
+</kw>
+<kw name="click donasi sekarang">
+<status status="NOT RUN" endtime="20210913 22:34:05.623" starttime="20210913 22:34:05.623"/>
+</kw>
+<kw name="click donasi 10k">
+<status status="NOT RUN" endtime="20210913 22:34:05.624" starttime="20210913 22:34:05.623"/>
+</kw>
+<kw name="click transfer BCA">
+<status status="NOT RUN" endtime="20210913 22:34:05.625" starttime="20210913 22:34:05.624"/>
+</kw>
+<kw name="type donatur info">
+<status status="NOT RUN" endtime="20210913 22:34:05.625" starttime="20210913 22:34:05.625"/>
+</kw>
+<kw name="click process payment">
+<status status="NOT RUN" endtime="20210913 22:34:05.627" starttime="20210913 22:34:05.627"/>
+</kw>
+<kw name="click x banner">
+<status status="NOT RUN" endtime="20210913 22:34:05.628" starttime="20210913 22:34:05.628"/>
+</kw>
+<kw name="click back">
+<status status="NOT RUN" endtime="20210913 22:34:05.629" starttime="20210913 22:34:05.629"/>
+</kw>
+<kw name="click back to home">
+<status status="NOT RUN" endtime="20210913 22:34:05.632" starttime="20210913 22:34:05.631"/>
+</kw>
+<status status="FAIL" endtime="20210913 22:34:05.633" starttime="20210913 22:33:56.072">No keyword with name 'Wait Until Element Is Visible ${campaign}' found.</status>
+</test>
+<status status="FAIL" endtime="20210913 22:34:05.636" starttime="20210913 22:33:55.918"/>
+</suite>
+<statistics>
+<total>
+<stat fail="1" skip="0" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" skip="0" id="s1" name="donationSuccess" pass="0">donationSuccess</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
